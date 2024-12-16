@@ -14,7 +14,7 @@ tracks:
       :{release_inc} --os-name fedora
     - git-bloom-generate -y rosrpm --prefix release/:{ros_distro} :{ros_distro} -i
       :{release_inc} --os-name rhel
-    devel_branch: null
+    devel_branch: main
     last_version: 0.1.1
     name: upstream
     patches: null
@@ -24,4 +24,4 @@ tracks:
     ros_distro: rolling
     vcs_type: git
     vcs_uri: https://github.com/Barry-Xu-2018/ros2_service_load_balancing.git
-    version: :{ask}
+    version: :{auto}
