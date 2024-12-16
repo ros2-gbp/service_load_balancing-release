@@ -1,0 +1,12 @@
+Source: ros-rolling-service-load-balancing
+Section: misc
+Priority: optional
+Maintainer: Barry Xu <barry.xu@sony.com>
+Build-Depends: debhelper (>= 9.0.0), ros-rolling-ament-cmake, ros-rolling-example-interfaces <!nocheck>, ros-rolling-rclcpp, ros-rolling-rclcpp <!nocheck>, ros-rolling-rosidl-typesupport-introspection-cpp, ros-rolling-std-msgs, ros-rolling-std-srvs <!nocheck>, ros-rolling-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-rolling-service-load-balancing
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-rolling-rclcpp, ros-rolling-rosidl-default-runtime, ros-rolling-rosidl-typesupport-introspection-cpp, ros-rolling-std-msgs, ros-rolling-ros-workspace
+Description: This package helps ROS2 services implement load balancing functionality.
