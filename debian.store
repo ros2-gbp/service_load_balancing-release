@@ -1,1 +1,1 @@
-{"base": "cb8ccc2", "parent": "debian/rolling/service_load_balancing", "previous": "299c0c2", "trim": "", "trimbase": ""}
+{"base": "fbfafd2c330f", "parent": "debian/kilted/service_load_balancing", "previous": "fd24eaa1d8b2", "trim": "", "trimbase": ""}
