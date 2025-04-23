@@ -1,0 +1,12 @@
+Source: ros-kilted-service-load-balancing
+Section: misc
+Priority: optional
+Maintainer: Barry Xu <barry.xu@sony.com>
+Build-Depends: debhelper (>= 9.0.0), ros-kilted-ament-cmake, ros-kilted-example-interfaces <!nocheck>, ros-kilted-rclcpp, ros-kilted-rclcpp <!nocheck>, ros-kilted-rosidl-typesupport-introspection-cpp, ros-kilted-std-msgs, ros-kilted-std-srvs <!nocheck>, ros-kilted-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-kilted-service-load-balancing
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-kilted-rclcpp, ros-kilted-rosidl-default-runtime, ros-kilted-rosidl-typesupport-introspection-cpp, ros-kilted-std-msgs, ros-kilted-ros-workspace
+Description: This package helps ROS2 services implement load balancing functionality.
