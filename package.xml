@@ -2,7 +2,7 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>service_load_balancing</name>
-  <version>0.1.1</version>
+  <version>0.1.2</version>
   <description>This package helps ROS2 services implement load balancing functionality.</description>
   <maintainer email="barry.xu@sony.com">Barry Xu</maintainer>
   <maintainer email="Tomoya.Fujita@sony.com">Tomoya Fujita</maintainer>
@@ -19,6 +19,7 @@
   <exec_depend>std_msgs</exec_depend>
   <exec_depend>rclcpp</exec_depend>
 
+  <test_depend>ament_cmake_gtest</test_depend>
   <test_depend>rclcpp</test_depend>
   <test_depend>std_srvs</test_depend>
   <test_depend>example_interfaces</test_depend>
