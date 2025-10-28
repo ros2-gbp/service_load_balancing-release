@@ -16,6 +16,8 @@
 
 #include <atomic>
 
+#include <rclcpp/executors/single_threaded_executor.hpp>
+
 #include "../src/service_client_proxy_manager.hpp"
 
 class TestServiceClientProxyManager : public ::testing::Test
@@ -135,7 +137,8 @@ TEST_F(TestServiceClientProxyManager, test_check_service_server_change_notificat
 
   {
     std::thread run_spin_thread([this](){
-      rclcpp::spin_all(node_, std::chrono::milliseconds(200));
+      rclcpp::executors::SingleThreadedExecutor executor;
+      executor.spin_node_all(node_, std::chrono::milliseconds(200));
     });
     run_spin_thread.join();
   }
@@ -149,7 +152,8 @@ TEST_F(TestServiceClientProxyManager, test_check_service_server_change_notificat
   service_server_2.reset();
   {
     std::thread run_spin_thread([this](){
-      rclcpp::spin_all(node_, std::chrono::milliseconds(200));
+      rclcpp::executors::SingleThreadedExecutor executor;
+      executor.spin_node_all(node_, std::chrono::milliseconds(200));
     });
     run_spin_thread.join();
   }
@@ -164,7 +168,8 @@ TEST_F(TestServiceClientProxyManager, test_check_service_server_change_notificat
 
   {
     std::thread run_spin_thread([this](){
-      rclcpp::spin_all(node_, std::chrono::milliseconds(200));
+      rclcpp::executors::SingleThreadedExecutor executor;
+      executor.spin_node_all(node_, std::chrono::milliseconds(200));
     });
     run_spin_thread.join();
   }
@@ -203,7 +208,8 @@ TEST_F(TestServiceClientProxyManager, test_get_created_client_proxy)
 
   {
     std::thread run_spin_thread([this](){
-      rclcpp::spin_all(node_, std::chrono::milliseconds(200));
+      rclcpp::executors::SingleThreadedExecutor executor;
+      executor.spin_node_all(node_, std::chrono::milliseconds(200));
     });
     run_spin_thread.join();
   }
@@ -223,7 +229,8 @@ TEST_F(TestServiceClientProxyManager, test_get_created_client_proxy)
 
   {
     std::thread run_spin_thread([this](){
-      rclcpp::spin_all(node_, std::chrono::milliseconds(200));
+      rclcpp::executors::SingleThreadedExecutor executor;
+      executor.spin_node_all(node_, std::chrono::milliseconds(200));
     });
     run_spin_thread.join();
   }
@@ -272,7 +279,8 @@ TEST_F(TestServiceClientProxyManager, test_remove_load_balancing_service)
    to_be_removed_service_name , "std_srvs/srv/Empty", callback);
 
   std::thread run_spin_thread([this](){
-    rclcpp::spin_all(node_, std::chrono::milliseconds(200));
+    rclcpp::executors::SingleThreadedExecutor executor;
+    executor.spin_node_all(node_, std::chrono::milliseconds(200));
   });
   run_spin_thread.join();
   client_proxy_mgr->send_request_to_check_service_servers();
