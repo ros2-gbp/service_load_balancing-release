@@ -1,3 +1,26 @@
+## service_load_balancing (rolling) - 0.1.3-1
+
+The packages in the `service_load_balancing` repository were released into the `rolling` distro by running `/usr/bin/bloom-release --rosdistro rolling service_load_balancing` on `Tue, 28 Oct 2025 05:27:03 -0000`
+
+The `service_load_balancing` package was released.
+
+Version of package(s) in repository `service_load_balancing`:
+
+- upstream repository: https://github.com/Barry-Xu-2018/ros2_service_load_balancing.git
+- release repository: https://github.com/ros2-gbp/service_load_balancing-release.git
+- rosdistro version: `0.1.2-1`
+- old version: `0.1.2-1`
+- new version: `0.1.3-1`
+
+Versions of tools used:
+
+- bloom version: `0.13.0`
+- catkin_pkg version: `1.1.0`
+- rosdep version: `0.26.0`
+- rosdistro version: `1.0.1`
+- vcstools version: `0.1.42`
+
+
 ## service_load_balancing (rolling) - 0.1.2-1
 
 The packages in the `service_load_balancing` repository were released into the `rolling` distro by running `/usr/bin/bloom-release --rosdistro rolling service_load_balancing` on `Mon, 26 May 2025 02:03:30 -0000`
