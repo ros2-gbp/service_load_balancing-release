@@ -52,4 +52,5 @@ tracks:
     ros_distro: rolling
     vcs_type: git
     vcs_uri: https://github.com/Barry-Xu-2018/ros2_service_load_balancing.git
-    version: :{auto}
+    version: 0.1.3
+    version_saved: :{auto}
