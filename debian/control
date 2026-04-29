@@ -1,0 +1,12 @@
+Source: ros-lyrical-service-load-balancing
+Section: misc
+Priority: optional
+Maintainer: Barry Xu <barry.xu@sony.com>
+Build-Depends: debhelper (>= 9.0.0), ros-lyrical-ament-cmake, ros-lyrical-ament-cmake-gtest <!nocheck>, ros-lyrical-example-interfaces <!nocheck>, ros-lyrical-rclcpp, ros-lyrical-rclcpp <!nocheck>, ros-lyrical-rosidl-typesupport-introspection-cpp, ros-lyrical-std-msgs, ros-lyrical-std-srvs <!nocheck>, ros-lyrical-ros-workspace
+Homepage: https://index.ros.org/p/service_load_balancing/#lyrical
+Standards-Version: 3.9.2
+
+Package: ros-lyrical-service-load-balancing
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-lyrical-rclcpp, ros-lyrical-rosidl-default-runtime, ros-lyrical-rosidl-typesupport-introspection-cpp, ros-lyrical-std-msgs, ros-lyrical-ros-workspace
+Description: This package helps ROS2 services implement load balancing functionality.
